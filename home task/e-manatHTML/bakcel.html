@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <title>Bakcel</title>
+</head>
+<body>
+<div id="bakcelBox">
+    <header class="head">
+        <img src="images\bakcel1.png" alt="">
+        <input id="inputNumber" type="text" value="0" >
+        <button onclick="pop(1)">
+            <i class="fas fa-caret-left"></i>
+            <span>SIL</span>
+        </button>
+        <button onclick="pop(4)">
+            <span>TEMIZLE</span>
+        </button>
+    </header>
+    <main>
+        <header>
+
+        </header>
+        <content>
+            <button onclick="add(1)"><span>1</span></button>
+            <button onclick="add(2)"><span>2</span></button>
+            <button onclick="add(3)"><span>3</span></button>
+            <button onclick="add(4)"><span>4</span></button>
+            <button onclick="add(5)"><span>5</span></button>
+            <button onclick="add(6)"><span>6</span></button>
+            <button onclick="add(7)"><span>7</span></button>
+            <button onclick="add(8)"><span>8</span></button>
+            <button onclick="add(9)"><span>9</span></button>
+            <button onclick="add(0)"><span>0</span></button>
+ 
+        </content>
+    </main>
+    <footer>
+        
+        <button onclick="document.location.href='index.html'"><span>ANA SEHFE</span></button>
+        <button onclick="changePage('mOperator.html')"><span>GERI</span></button>
+        <button onclick="pop(4)"><span>TEMIZLE</span></button>
+        <button id="next" onclick="changePage('wecome.html')"><span>IRELI</span></button>
+    </footer>
+
+    </header>
+</div>
+<script src="js/javaScript.js"></script>
+</body>
+</html>

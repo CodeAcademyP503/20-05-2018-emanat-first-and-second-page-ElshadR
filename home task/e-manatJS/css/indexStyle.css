@@ -1,0 +1,108 @@
+body{
+    margin: 0px;
+}
+#indexBox{
+    display: grid;
+    width: 70%;
+    margin: 0px auto;
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+#indexBox header .emanat{
+    margin-left: 277px;
+    width: 299px;
+    height: 127px;
+    float: left;
+}
+#indexBox header .flagAzeri{
+    width: 50px;
+    margin-left: 178px;
+    cursor: pointer;
+}
+#indexBox header .flagRussia{
+    width: 50px;
+    cursor: pointer;
+}
+#indexBox header .flagEnglish{
+    width: 50px;
+    cursor: pointer;
+}
+#indexBox main header {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-gap: 5px;
+}
+#indexBox main header >div{
+    border-radius: 7px;
+    box-sizing: border-box;
+    padding: 33px 5px;
+    height: 100px;
+    cursor: pointer;
+}
+#indexBox main header >div:nth-child(1){
+    grid-column: 1/2;
+    background: #054899;
+    
+}
+#indexBox main header >div:nth-child(2){
+    grid-column: 2/3;
+    background: darkturquoise;
+}
+#indexBox main header >div:nth-child(3){
+    grid-column: 3/4;
+    background: wheat;
+}
+#indexBox main header >div:nth-child(4){
+    grid-column: 4/5;
+    background: darkblue;
+}
+#indexBox main header >div:nth-child(5){
+    grid-column: 5/6;
+    background: darkgray;
+    padding: 0px;
+}
+#indexBox main header >div:nth-child(5) img{
+    color:white;
+}
+#indexBox main header >div:nth-child(6){
+    grid-column: 6/7;
+    background: lightsteelblue;
+}
+#indexBox main header >div:nth-child(7){
+    grid-column: 7/8;
+    background: yellowgreen;
+}
+#indexBox main header >div img{
+    width: 91%;
+}
+
+#indexBox main content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 618px;
+    margin: 11px auto;
+    text-align: center;
+    
+}
+
+#indexBox main content #contentBox{
+    width: 200px;
+    height: 130px;
+    background: red;
+    margin: 3px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#indexBox main content #contentBox img{
+    width: 50px;
+}
+#indexBox main content #contentBox span{
+    font-size: 24px;
+    display: block;
+    font-weight: bold;
+    color: white;
+    box-sizing: border-box;
+    padding: 0px 10px;
+}

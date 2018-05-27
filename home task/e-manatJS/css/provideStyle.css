@@ -1,0 +1,109 @@
+
+/* ------------bank service start-------------*/
+#provide{
+    width: 80%;
+    margin: 20px auto;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#provide >main >header{
+    height: 76px;
+    background: #4391d3;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 6px 28px;
+    position: relative;
+}
+#provide >main >header img{
+    width: 53px;
+    background-color: #fda401;
+    border-radius: 100%;
+    padding: 5px;
+}
+#provide >main >header >div{
+    width: 2px;
+    height: 59px;
+    display: inline-block;
+    background: white;
+    margin-left: 70px;
+}
+#provide >main >header >span{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+    position: absolute;
+    top: 23px;
+}
+
+#provide >main >content{
+    display: flex;
+    flex-wrap: wrap;
+}
+#provide >main >content .box{
+    box-sizing: border-box;
+    width: 245px;
+    height: 121px;
+    margin: 8px;
+    border-radius: 10px;
+    padding: 20px 10px;
+    cursor: pointer;
+}
+#provide >main >content .box img{
+    width: 100%;
+    height: 100%;
+}
+/* ------------bank service end-------------*/
+/*-------------dovlet belediye-----------------------*/
+#provide >main >content .boxDB{
+    background: rgb(211, 211, 211);
+    width: 240px;
+    box-sizing: border-box;
+    height: 80px;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 15px;
+    position: relative;
+}
+#provide >main >content .boxDB:nth-child(1) >span{
+    font-size: 33px;
+    position: absolute;
+    top: 21px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: blue;
+}
+#provide >main >content .boxDB:nth-child(2) >span{
+    font-size: 20px;
+    position: absolute;
+    margin-left: 10px;
+    font-weight: bold;
+    color: white;
+}
+#provide >main >content .boxDB:nth-child(3) >span{
+    font-size: 23px;
+    position: absolute;
+    font-weight: bold;
+    color: aquamarine;
+    top: 21px;
+}
+#provide >main >content .boxDB >img{
+    width: 59px;
+}
+#provide >footer{
+    margin-top: 30px;
+    text-align: end;
+
+}
+#provide >footer >span{
+    background: green;
+    padding: 18px 37px;
+    border-radius: 10px;
+    font-size: 29px;
+    font-weight: bold;
+    color: white;
+    margin-right: 55px;
+    cursor: pointer;
+}
+/*-------------dovlet belediye-------------------*/

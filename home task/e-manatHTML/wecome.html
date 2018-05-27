@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Welcome</title>
+</head>
+
+<body>
+    <div id="welcomeBox">
+        <span id="searchYesNumber">
+            Tesekurler sizin nomreniz tapildi.
+        </span>
+        <span id="searchNoNumber">
+            Bele bir nomre yoxdur xahis edirik yeniden ceht edin.
+        </span>
+        <span id="number"></span>
+        <button onclick="changePage('bakcel.html')">
+            <span>GERİ</span>
+        </button>
+    </div>
+    <script>
+        var userdata = {
+            name: ["Elsad", "Ilkin"],
+            number: ["0553097125", "0555555555"]
+        };
+        var numberCookie = document.cookie.split("=");
+        var numberStorage = localStorage.lastname;
+        function search() {
+            for (i = 0; i < userdata.number.length; i++) {
+                if ((numberCookie[1] == userdata.number[i])) {
+                    searchYesNumber.style.display = "block";
+                    number.style.display = "block";
+                    searchNoNumber.style.display = "none";
+                    number.innerText = userdata.name[i] + "- " + userdata.number[i];
+                }
+                if (numberStorage == userdata.number[i]) {
+                    searchYesNumber.style.display = "block";
+                    number.style.display = "block";
+                    searchNoNumber.style.display = "none";
+                    number.innerText = userdata.name[i] + "- " + userdata.number[i];
+                }
+            }
+        }
+        search();
+
+    </script>
+    <script src="js/javaScript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,391 @@
+body {
+  margin: 0px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); }
+
+@media screen and (min-width: 800px) {
+  #indexBox {
+    border: 4px solid blue;
+    border-radius: 15px;
+    grid-column: 4/9;
+    display: grid;
+    box-sizing: border-box;
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr); }
+    #indexBox .head {
+      grid-column: 1/3;
+      margin: 0px auto; }
+    #indexBox > main {
+      grid-column: 1/3; }
+      #indexBox > main > content {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(3, 1fr); }
+        #indexBox > main > content > button {
+          background: transparent;
+          padding: 0px;
+          outline: none;
+          cursor: pointer;
+          border: none; }
+          #indexBox > main > content > button > img {
+            border-radius: 10px;
+            width: 100%; }
+  /*------mobilOperator start------*/
+  #mobilBox {
+    grid-column: 4/10;
+    border-radius: 15px;
+    border: 5px solid blue;
+    margin-top: 113px;
+    box-sizing: border-box;
+    padding: 20px; }
+    #mobilBox > main {
+      display: grid;
+      grid-gap: 10px; }
+      #mobilBox > main > content {
+        display: flex;
+        flex-wrap: wrap; }
+        #mobilBox > main > content > button {
+          background: transparent;
+          outline: none;
+          flex-grow: 1;
+          border: 0px;
+          cursor: pointer; }
+          #mobilBox > main > content > button > img {
+            border-radius: 10px;
+            width: 100%; }
+    #mobilBox > footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      margin-top: 12px; }
+      #mobilBox > footer > button {
+        outline: none;
+        padding: 7px;
+        border-radius: 10px;
+        border: 2px solid blue;
+        background: green; }
+        #mobilBox > footer > button > span {
+          font-size: 25px;
+          padding: 0px 17px;
+          font-weight: bold;
+          color: blue; }
+  /*------mobilOperator end------*/
+  /*------baksel mO start------*/
+  #bakcelBox {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: 4/10;
+    margin-top: 125px;
+    box-sizing: border-box;
+    padding: 25px;
+    border-radius: 15px;
+    border: 5px solid blue; }
+    #bakcelBox .head {
+      grid-column: 1/13;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 15px; }
+      #bakcelBox .head > img {
+        grid-column: 1/4;
+        width: 100%;
+        height: 100%; }
+      #bakcelBox .head > input {
+        padding: 0px;
+        grid-column: 4/10;
+        border-radius: 10px;
+        outline: none;
+        width: 95%;
+        font-size: 36px;
+        border: 2px solid blue; }
+      #bakcelBox .head > button:nth-child(3) {
+        padding: 0px;
+        grid-column: 10/13;
+        border-radius: 10px;
+        outline: none;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        padding-left: 11px;
+        border: 2px solid blue; }
+        #bakcelBox .head > button:nth-child(3) > i {
+          color: blue;
+          font-size: 41px;
+          transition: all .3s ease; }
+        #bakcelBox .head > button:nth-child(3) > span {
+          margin-left: 7px;
+          font-size: 29px;
+          font-weight: bold;
+          color: blue; }
+        #bakcelBox .head > button:nth-child(3):hover i {
+          color: green; }
+      #bakcelBox .head > button:nth-child(4) {
+        visibility: hidden; }
+    #bakcelBox > main {
+      grid-column: 5/9; }
+      #bakcelBox > main content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+        margin-top: 20px; }
+        #bakcelBox > main content button {
+          background: blue;
+          border-radius: 24px;
+          outline: none;
+          border: 0px;
+          cursor: pointer; }
+          #bakcelBox > main content button span {
+            font-size: 46px;
+            color: white;
+            font-weight: bold; }
+          #bakcelBox > main content button:nth-child(10) {
+            grid-column: 1/4; }
+    #bakcelBox > footer {
+      margin-top: 20px;
+      grid-column: 1/13;
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      grid-gap: 5px;
+      grid-template-columns: repeat(12, 1fr); }
+      #bakcelBox > footer > button {
+        flex-grow: 1;
+        padding: 10px;
+        border: 2px solid blue;
+        outline: none;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer; }
+        #bakcelBox > footer > button:nth-child(1) {
+          grid-column: 1/4;
+          background: green; }
+        #bakcelBox > footer > button:nth-child(2) {
+          grid-column: 4/7;
+          background: green; }
+        #bakcelBox > footer > button:nth-child(3) {
+          grid-column: 7/10;
+          background: green; }
+        #bakcelBox > footer > button:nth-child(4) {
+          grid-column: 10/13;
+          display: none;
+          transition: all .3s ease;
+          background: yellow;
+          display: none; }
+          #bakcelBox > footer > button:nth-child(4) span {
+            color: blue; }
+          #bakcelBox > footer > button:nth-child(4):hover {
+            background: green;
+            border: 2px solid green; }
+        #bakcelBox > footer > button > span {
+          font-size: 22px;
+          font-weight: bold;
+          color: white; }
+  /*------baksel mO end------*/
+  /*------welcome start------*/
+  #welcomeBox {
+    grid-column: 4/10;
+    margin-top: 100px;
+    border-radius: 15px;
+    border: 5px solid blue;
+    box-sizing: border-box;
+    padding: 20px; }
+    #welcomeBox > span {
+      border: 1px solid blue;
+      border-radius: 10px;
+      box-sizing: border-box;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 30px;
+      margin-bottom: 15px; }
+      #welcomeBox > span:nth-child(1) {
+        color: green;
+        display: none; }
+      #welcomeBox > span:nth-child(2) {
+        color: red;
+        display: block; }
+      #welcomeBox > span:nth-child(3) {
+        color: green;
+        display: none; }
+    #welcomeBox > button {
+      outline: none;
+      border: 2px solid blue;
+      border-radius: 10px;
+      cursor: pointer;
+      background: green; }
+      #welcomeBox > button > span {
+        font-size: 30px;
+        font-weight: bold;
+        padding: 0px 15px;
+        color: blue; }
+  /*------welcome end------*/ }
+
+@media screen and (max-width: 600px) {
+  #indexBox {
+    grid-column: 1/13;
+    display: flex;
+    flex-wrap: wrap; }
+    #indexBox .head {
+      flex-grow: 1; }
+      #indexBox .head img {
+        width: 100%; }
+    #indexBox main {
+      flex-grow: 1; }
+      #indexBox main content {
+        display: flex;
+        flex-wrap: wrap; }
+        #indexBox main content button {
+          flex-grow: 1;
+          border: 0px;
+          outline: none;
+          padding: 0px; }
+          #indexBox main content button img {
+            width: 100%; }
+  #mobilBox {
+    grid-column: 1/13;
+    display: flex;
+    flex-wrap: wrap; }
+    #mobilBox main {
+      flex-grow: 1; }
+      #mobilBox main content {
+        display: flex;
+        flex-wrap: wrap; }
+        #mobilBox main content button {
+          flex-grow: 1;
+          border: 0px;
+          outline: none;
+          padding: 0px; }
+          #mobilBox main content button img {
+            width: 100%; }
+    #mobilBox footer {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center; }
+      #mobilBox footer button {
+        outline: none;
+        padding: 7px;
+        border-radius: 10px;
+        border: 2px solid blue;
+        background: green; }
+        #mobilBox footer button span {
+          font-size: 28px;
+          padding: 0px 17px;
+          font-weight: bold;
+          color: white; }
+  #bakcelBox {
+    grid-column: 1/13;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    margin-top: 10px; }
+    #bakcelBox .head {
+      flex-grow: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      #bakcelBox .head > img {
+        width: 100%;
+        margin-bottom: 20px; }
+      #bakcelBox .head > input {
+        font-size: 28px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        border: 2px solid blue;
+        padding-left: 6px; }
+      #bakcelBox .head > button {
+        padding: 0px;
+        grid-column: 10/13;
+        border-radius: 10px;
+        outline: none;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        padding-left: 11px;
+        border: 2px solid blue;
+        margin: 10px; }
+        #bakcelBox .head > button > span {
+          color: blue;
+          font-size: 41px;
+          transition: all .3s ease; }
+        #bakcelBox .head > button:nth-child(3) > i {
+          color: blue;
+          font-size: 41px;
+          transition: all .3s ease; }
+    #bakcelBox > main {
+      display: flex;
+      justify-content: center;
+      flex-grow: 1; }
+      #bakcelBox > main > content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 50%;
+        flex-grow: 1; }
+        #bakcelBox > main > content > button {
+          background: blue;
+          border-radius: 24px;
+          outline: none;
+          border: 0px;
+          cursor: pointer;
+          margin: 3px; }
+          #bakcelBox > main > content > button > span {
+            font-size: 65px;
+            padding: 28px;
+            color: white;
+            font-weight: bold; }
+    #bakcelBox footer {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 15px;
+      flex-grow: 1; }
+      #bakcelBox footer button {
+        flex-grow: 1;
+        padding: 10px;
+        border: 2px solid blue;
+        outline: none;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+        background: green;
+        margin: 5px; }
+        #bakcelBox footer button span {
+          font-size: 22px;
+          font-weight: bold;
+          color: white; }
+        #bakcelBox footer button:nth-child(3) {
+          display: none; }
+        #bakcelBox footer button:nth-child(4) {
+          background: yellow;
+          display: none; }
+          #bakcelBox footer button:nth-child(4) span {
+            color: blue; }
+  #welcomeBox {
+    grid-column: 1/13;
+    box-sizing: border-box;
+    padding: 20px; }
+    #welcomeBox > span {
+      border: 1px solid blue;
+      border-radius: 10px;
+      box-sizing: border-box;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 30px;
+      margin-bottom: 15px;
+      color: green; }
+      #welcomeBox > span:nth-child(1) {
+        display: none; }
+      #welcomeBox > span:nth-child(2) {
+        color: red; }
+      #welcomeBox > span:nth-child(3) {
+        display: none; }
+    #welcomeBox button {
+      outline: none;
+      border: 2px solid blue;
+      border-radius: 10px;
+      cursor: pointer;
+      background: green;
+      padding: 5px; }
+      #welcomeBox button span {
+        font-size: 30px;
+        font-weight: bold;
+        padding: 0px 15px;
+        color: white; } }
